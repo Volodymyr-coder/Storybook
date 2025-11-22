@@ -42,7 +42,7 @@
 
 | Open State
 SidebarMenu Open - (screenshots/sidebarMenu-open.jpg)
-SidebarMenu SubMenu Open -(screenshots/sidebarMenu-subMenu-open-.jpg)
+SidebarMenu SubMenu Open -(screenshots/sidebarMenu-subMenu-open.jpg)
 
 ### Storybook UI
 
