@@ -1,5 +1,7 @@
 ## Screenshots
 
+This is how my component library tets looks in App
+
 ### Input Component
 
 | Default State  
@@ -46,4 +48,22 @@
 
 ### Storybook UI
 
-![Storybook UI](test/screenshots/storybook-ui.png)
+This is how my component library tets looks in Storybook:
+![Storybook UI](test/screenshots/sb-components.jpg)
+
+this is toast
+![Storybook UI](test/screenshots/toast-success-sb.jpg)
+![Storybook UI](test/screenshots/toast-info-sb.jpg)
+![Storybook UI](test/screenshots/toast-error-sb.jpg)
+
+this is sidebarMenu
+![Storybook UI](test/screenshots/sidebar-open-sb.jpg)
+![Storybook UI](test/screenshots/sidebar-close-sb.jpg)
+
+this is inputs
+![Storybook UI](test/screenshots/input-password-filled-sb.jpg)
+![Storybook UI](test/screenshots/password-clean-sb.jpg)
+![Storybook UI](test/screenshots/input-text-sb.jpg)
+![Storybook UI](test/screenshots/input-text-clean-sb.jpg)
+![Storybook UI](test/screenshots/input-number-sb.jpg)
+![Storybook UI](test/screenshots/input-number-sb.jpg)
