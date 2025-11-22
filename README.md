@@ -28,7 +28,7 @@
 ---
 
 | Exit State
-![Toast Info Exit](screenshots/toast-info-close.jpg)
+![Toast Info Exit](src/screenshots/toast-info-close.jpg)
 ![Toast Success Exit](screenshots/toast-success-close.jpg)
 ![Toast Error Exit](screenshots/toast-error-close.jpg)
 
