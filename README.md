@@ -1,6 +1,6 @@
 ## Screenshots
 
-This is how my component library tets looks in App
+This is how my component looks in App
 
 ### Input Component
 
@@ -48,7 +48,7 @@ This is how my component library tets looks in App
 
 ### Storybook UI
 
-This is how my component library tets looks in Storybook:
+This is how my component looks in Storybook:
 ![Storybook UI](test/screenshots/sb-components.jpg)
 
 this is toast
