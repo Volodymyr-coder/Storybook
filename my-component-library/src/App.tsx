@@ -14,7 +14,7 @@ function App() {
     { label: 'Home' },
     {
       label: 'Products',
-      children: [{ label: 'Product 1' }, { label: 'Product 2' }]
+      children: [{ label: 'FOOD' }, { label: 'DRINKS' }, { label: 'SNACKS' }]
     }
   ];
 
@@ -40,7 +40,7 @@ function App() {
           className={css.btn}
           onClick={() => showToast('This is a toast message!', 'info')}
         >
-          Show Toast
+          Toast
         </button>
       </div>
       <div className={css.right}>

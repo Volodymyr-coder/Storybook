@@ -42,7 +42,7 @@ export const Input = ({
       )}
       {clearable && value && (
         <button onClick={clearInput} className={css.clearButton}>
-          {/* ❌ */} clear
+          clear
         </button>
       )}
     </div>
