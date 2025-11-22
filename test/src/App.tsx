@@ -40,7 +40,7 @@ function App() {
         />
         <button
           className={css.btn}
-          onClick={() => showToast('This is a toast message!', 'error')}
+          onClick={() => showToast('This is a toast message!', 'info')}
         >
           Toast
         </button>
