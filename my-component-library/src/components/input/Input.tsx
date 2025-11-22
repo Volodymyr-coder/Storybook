@@ -1,6 +1,5 @@
-// src/components/Input/Input.tsx
 import React, { useState } from 'react';
-import './input.css';
+import css from './input.module.css';
 
 type InputProps = {
   type?: 'text' | 'password' | 'number';
@@ -10,7 +9,7 @@ type InputProps = {
 };
 
 export const Input = ({
-  type = 'text',
+  type = 'password',
   clearable = false,
   value,
   onChange
@@ -26,21 +25,24 @@ export const Input = ({
   };
 
   return (
-    <div className="input-container">
+    <div className={css.container}>
       <input
+        className={css.inputField}
         type={showPassword ? 'text' : type}
         value={value}
         onChange={onChange}
-        className="input-field"
       />
       {type === 'password' && (
-        <button onClick={togglePasswordVisibility} className="toggle-password">
+        <button
+          onClick={togglePasswordVisibility}
+          className={css.togglePassword}
+        >
           {showPassword ? '👁️' : '🔒'}
         </button>
       )}
       {clearable && value && (
-        <button onClick={clearInput} className="clear-button">
-          ❌
+        <button onClick={clearInput} className={css.clearButton}>
+          {/* ❌ */} clear
         </button>
       )}
     </div>

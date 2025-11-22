@@ -1,39 +1,38 @@
-.input-container {
+.container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 250px;
-    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    margin: 10px auto 10px auto;
 }
 
-.input-field {
-    flex: 1;
+.inputField {
+    width: 250px;
     padding: 10px 12px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 6px;
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: transparent;
 }
 
-.input-field:focus {
-    border-color: #4f46e5;
+.inputField:focus {
+    border-color: rgb(236, 241, 243);
     box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
 }
 
-button.toggle-password,
-button.clear-button {
+.togglePassword,
+.clearButton {
     border: none;
+    color: rgb(58, 191, 244);
     background: transparent;
     cursor: pointer;
     font-size: 16px;
     padding: 6px 10px;
     border-radius: 6px;
-    transition: background 0.2s;
-}
 
-button.toggle-password:hover,
-button.clear-button:hover {
-    background: transparent;
 }
