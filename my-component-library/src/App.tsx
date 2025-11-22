@@ -10,6 +10,8 @@ function App() {
     message: string;
     type: 'success' | 'error' | 'info';
   } | null>(null);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   const menuItems = [
     { label: 'Home' },
     {
@@ -42,9 +44,19 @@ function App() {
         >
           Toast
         </button>
+        <button
+          className={css.btn}
+          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        >
+          Toggle Sidebar
+        </button>
       </div>
       <div className={css.right}>
-        <SidebarMenu items={menuItems} isOpen={true} onClose={() => {}} />
+        <SidebarMenu
+          items={menuItems}
+          isOpen={isSidebarOpen}
+          onClose={() => setIsSidebarOpen(false)}
+        />
       </div>
       {toast && (
         <Toast

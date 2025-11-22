@@ -12,7 +12,7 @@ type SidebarMenuProps = {
   onClose: () => void;
 };
 
-export const SidebarMenu = ({ items, onClose }: SidebarMenuProps) => {
+export const SidebarMenu = ({ items, isOpen, onClose }: SidebarMenuProps) => {
   const [expandedItems, setExpandedItems] = useState<string[]>([]);
 
   const toggleExpand = (label: string) => {
@@ -24,19 +24,19 @@ export const SidebarMenu = ({ items, onClose }: SidebarMenuProps) => {
   };
 
   return (
-    <div className={css.container}>
-      <div className={css.sidebarOverlay} onClick={onClose} />
-      <div className={css.menuList}>
+    <>
+      {isOpen && <div className={css.overlay} onClick={onClose} />}
+      <div className={`${css.sidebar} ${isOpen ? css.open : ''}`}>
         <ul className={css.menuList}>
           {items.map((item, index) => (
-            <li key={index}>
+            <li key={index} className={css.menuItem}>
               <div onClick={() => item.children && toggleExpand(item.label)}>
                 {item.label}
               </div>
               {item.children && expandedItems.includes(item.label) && (
-                <ul className={css.menuList}>
+                <ul className={css.submenuList}>
                   {item.children.map((child, childIndex) => (
-                    <li className={css.menuItem} key={childIndex}>
+                    <li key={childIndex} className={css.submenuItem}>
                       {child.label}
                     </li>
                   ))}
@@ -46,6 +46,6 @@ export const SidebarMenu = ({ items, onClose }: SidebarMenuProps) => {
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 };
